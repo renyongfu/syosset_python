@@ -74,3 +74,10 @@ On the same computer as your server computer or different computer, start the bo
 python bounce.py 192.168.1.28 my_cool_name
 ```
 Note that you can start multiple clients on different computers
+
+# Related topics
+## Multithreading
+Video: https://www.youtube.com/watch?v=PJ4t2U15ACo
+
+## Socket
+Video: https://www.youtube.com/watch?v=T0rYSFPAR0A
