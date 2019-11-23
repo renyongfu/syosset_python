@@ -1,7 +1,11 @@
 import socket
+import sys
 from threading import *
 import pickle
 
+
+host = "127.0.0.1"
+port = 8000
 
 should_exit = False
 connection_data = {}
@@ -44,13 +48,12 @@ class SocketListenerServer(Thread):
         self.start()
 
     def run(self):
+        print("Server is running")
+        print("Sever host = ", host)
+        print("Server port = ", port)
         serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        host = "192.168.1.28"
-        port = 8000
         max_num_clients = 5
         aceptance_timeout = 1
-        print ("Sever host = ", host)
-        print ("Server port = ", port)
         serversocket.bind((host, port))
         serversocket.listen(max_num_clients)
         serversocket.settimeout(aceptance_timeout)
@@ -63,6 +66,9 @@ class SocketListenerServer(Thread):
                 ClientConnection(clientsocket, client_address)
             except:
                 pass
+
+if len(sys.argv) >= 2:
+    host = sys.argv[1]
 
 sv = SocketListenerServer()
 print ('server started and listening')
