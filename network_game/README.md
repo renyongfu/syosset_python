@@ -76,8 +76,15 @@ python bounce.py 192.168.1.28 my_cool_name
 Note that you can start multiple clients on different computers
 
 # Related topics
-## Multithreading
-Video: https://www.youtube.com/watch?v=PJ4t2U15ACo
+
+## How the Internet Works
+Videos:
+ - How the Internet Works: https://www.youtube.com/watch?v=7_LPdttKXPc
+ - How does the INTERNET work: https://www.youtube.com/watch?v=x3c1ih2NJEg
+ - Internet Structure: https://www.youtube.com/watch?v=PbFaC3Y5yV4
 
 ## Socket
 Video: https://www.youtube.com/watch?v=T0rYSFPAR0A
+
+## Multithreading
+Video: https://www.youtube.com/watch?v=PJ4t2U15ACo
